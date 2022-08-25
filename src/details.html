@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../dist/output.css">
+    <script src="https://kit.fontawesome.com/c7223b399b.js" crossorigin="anonymous"></script>
+    <title>Country Details</title>
+</head>
+
+<body class="font-Nunito bg-gray-light-bg dark:bg-blue-dark-bg dark:text-white">
+    <header
+        class="flex items-center justify-between py-6 px-4 shadow-lg bg-white sm:px-14 dark:bg-blue-dark dark:text-white">
+        <h1 class="font-bold text-sm lg:text-xl">Where in the world?</h1>
+        <div id="dark-mode" class="flex items-center cursor-pointer">
+            <i class="fa-regular fa-moon"></i>
+            <p class="font-semibold text-sm pl-1 lg:text-lg md:pl-2">Dark Mode</p>
+        </div>
+    </header>
+    <main class="px-4 sm:px-14 py-10 bg-gray-light-bg dark:bg-blue-dark-bg">
+        <a id="back"
+            class="cursor-pointer font-light bg-white shadow-[0px_0px_10px_1px_rgba(125,125,125,0.3)] rounded-sm px-8 py-2 dark:bg-blue-dark dark:shadow-[0px_0px_10px_1px_rgba(0,0,0,0.3)]">
+            <i class="pr-2 fa-solid fa-arrow-left-long"></i>
+            Back
+        </a>
+        <!--Main Flex Container-->
+        <div class="flex flex-col lg:flex-row items-center mt-20">
+            <!--Flag Container-->
+            <div class="w-full mb-10 lg:mb-0 lg:w-2/5 lg:mr-28">
+                <img id="flag" class="w-full" src="" alt="">
+            </div>
+            <!--Info Flex Container-->
+            <div class="w-full lg:w-3/5">
+                <!--First Row: Title Only-->
+                <h1 id="name" class="font-bold text-3xl mb-8"></h1>
+                <!--Second Row: Left Info Container & Right Info Container-->
+                <div class="flex flex-col mb-10 lg:flex-row lg:justify-between lg:mb-16">
+                    <!--Left Info Container-->
+                    <div class="w-full lg:w-1/2">
+                        <p id="native-name" class="mb-2"></p>
+                        <p id="population" class="mb-2"></p>
+                        <p id="region" class="mb-2"></p>
+                        <p id="sub-region" class="mb-2"></p>
+                        <p id="capital"></p>
+                    </div>
+                    <!--Right Info Container-->
+                    <div class="w-full mt-10 lg:mt-0 lg:w-1/2">
+                        <p id="tld" class="mb-2"></p>
+                        <p id="currency" class="mb-2"></p>
+                        <p id="lang"></p>
+                    </div>
+                </div>
+                <!--Third Row: Border Countries-->
+                <p id="borders"></p>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="./details.js"></script>
+</body>
+
+</html>
