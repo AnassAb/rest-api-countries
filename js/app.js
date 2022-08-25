@@ -258,7 +258,7 @@ function showCountry(country, i) {
     let img = document.createElement("img");
     img.src = flagPng;
     img.alt = country.name.common + "'s flag";
-    img.className = "h-40 w-96 md:w-80 rounded-t-lg";
+    img.className = "h-40 w-96 md:w-80 rounded-t-md";
     div.appendChild(img);
   }
 
