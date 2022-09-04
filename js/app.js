@@ -248,7 +248,7 @@ function showCountry(country, i) {
   }
 
   className +=
-    " country cursor-pointer bg-white rounded-md shadow-md shadow-gray dark:bg-blue-dark";
+    " country cursor-pointer bg-white rounded-md shadow-md shadow-gray pb-6 dark:bg-blue-dark";
 
   var div = document.createElement("div");
   div.className = className;
@@ -307,7 +307,7 @@ function showCountry(country, i) {
     b.appendChild(labeltext);
     b.className = "font-semibold";
     p = document.createElement("p");
-    p.className = "pb-12 px-6";
+    p.className = "px-6";
     textnode = document.createTextNode(capital);
     p.appendChild(b);
     p.appendChild(textnode);

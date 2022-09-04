@@ -551,6 +551,52 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 450px) {
+  .container {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 650px) {
+  .container {
+    max-width: 650px;
+  }
+}
+
+@media (min-width: 950px) {
+  .container {
+    max-width: 950px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1575px) {
+  .container {
+    max-width: 1575px;
+  }
+}
+
+@media (min-width: 1990px) {
+  .container {
+    max-width: 1990px;
+  }
+}
+
+@media (min-width: 2300px) {
+  .container {
+    max-width: 2300px;
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -561,6 +607,11 @@ video {
 
 .z-10 {
   z-index: 10;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .mt-20 {
@@ -603,12 +654,20 @@ video {
   display: none;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .w-full {
   width: 100%;
 }
 
 .w-3\/4 {
   width: 75%;
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .cursor-pointer {
@@ -650,6 +709,15 @@ video {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.rounded-t-md {
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .bg-gray-light-bg {
@@ -724,6 +792,18 @@ video {
   padding-right: 1.25rem;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .font-Nunito {
   font-family: Nunito Sans, sans-serif, monospace;
 }
@@ -736,6 +816,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -770,6 +855,12 @@ video {
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[0px_0px_5px_1px_rgba\(125\2c 125\2c 125\2c 0\.2\)\] {
+  --tw-shadow: 0px 0px 5px 1px rgba(125,125,125,0.2);
+  --tw-shadow-colored: 0px 0px 5px 1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -827,6 +918,10 @@ video {
 @media (min-width: 650px) {
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-80 {
+    width: 20rem;
   }
 
   .md\:grid-cols-2 {
