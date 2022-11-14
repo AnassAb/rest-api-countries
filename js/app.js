@@ -225,7 +225,7 @@ function showCountry(country, i) {
   let textnode;
   let className = "";
 
-  if (country.continents[0] == "Africa") {
+  if (country.continents[0] == "Africaa") {
     className = "africa";
   }
   if (country.continents[0] == "Asia") {
