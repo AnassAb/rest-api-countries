@@ -325,7 +325,7 @@ function showCountry(country, i) {
 }
 
 function listCountries(data) {
-  var i = 0;
+  let i = 0;
   data.forEach((country) => {
     showCountry(country, i);
     i++;
